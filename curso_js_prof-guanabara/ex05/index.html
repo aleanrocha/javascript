@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<title>Curso de JavaScript</title>
+				<style>
+								body {
+												background-color: lightcyan;
+												font-family: Arial, Helvetica, sans-serif;
+								}
+								h1, h2 {
+												color: darkblue;
+												text-align: center;
+								}
+				</style>
+</head>
+<body>
+				<h1>
+								HELLO WORLD!
+				</h1>
+				<h2>
+								Primeiros passos com DOM
+				</h2>
+				<p>Aqui vai o resultado</p>
+				<p>Aprendendo usar o <strong>DOM</strong> em JavaScript.</p>
+				<div id="msg" >Click em mim</div>
+				<script>
+								
+								
+								//por Marca
+								var p1 = document.getElementsByTagName('p')[1]
+								document.write(p1.innerText)
+								p1.style.color = "red"
+								
+								//por ID
+								var msg = document.getElementById('msg')
+								msg.innerHTML = "Contextualizando"
+								
+								//por Name
+								var msg = document.getElementsByName('msg')
+								msg.innerHTML = "Contextualizando"
+								
+								//por Class
+								var msg = document.getElementsByClassName('msg')
+								msg.innerHTML = "Contextualizando"
+								
+				</script>
+</body>
+</html>
