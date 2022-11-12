@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(75, 75, 214);
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    color: #fff;
+    text-align: center;
+}
+section {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.377);
+    margin: auto;
+    max-width: 500px;
+    padding: 10px;   
+}
+input#mas, input#fem {
+    cursor: pointer;
+}
+input#btn {
+    background-color: rgb(158, 217, 236);
+    border: none;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 0.8em;
+    font-weight: bolder;
+    padding: 8px;
+}
+input#btn:hover {
+    background-color: rgb(23, 23, 107);
+    color: rgb(255, 255, 255);
+}
+div#foto {
+    text-align: center;
+}
+footer {
+    color: #fff;
+    font-style: italic;
+    font-weight: bolder;
+    text-align: center;
+}
