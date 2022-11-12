@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<title>Curso de JavaScript</title>
+				<style>
+								body {
+												background-color: lightcyan;
+												font-family: Arial, Helvetica, sans-serif;
+								}
+								h1 {
+												font-weight: bold;
+								}
+								input {
+												width: 100px;
+												font-weight: bolder;
+												font-size: 1.5em;
+												margin-bottom: 8px;
+								}
+								div#res {
+												background-color: lightgray;
+												width: 150px;<li></li>
+												height: 50px;
+												line-height: 50px;
+												text-align: center;
+												font-size: 1.5em;
+												margin-top: 10px;
+								}
+				</style>
+</head>
+<body>
+				<!-- Trabalhando com eventos DOM -->
+				<h1>Calculando Números</h1>
+				<input type="number" name="txtn1" id="txtn1">
+				<input type="number" name="txtn2" id="txtn2"> 
+				<input type="button" value="–" onclick="subtrair()"><br>
+				
+				<input type="number" name="txtn3" id="txtn3">
+				<input type="number" name="txtn4" id="txtn4">
+				<input type="button" value="+" onclick="somar()"><br>
+				
+				<input type="number" name="txtn5" id="txtn5">
+				<input type="number" name="txtn6" id="txtn6">
+				<input type="button" value="×" onclick="multiplicar()"><br>
+				
+				<input type="number" name="txtn7" id="txtn7">
+				<input type="number" name="txtn8" id="txtn8">
+				<input type="button" value="÷" onclick="dividir()">
+				
+				<div id="res">Resultado...</div>
+				
+				<script>
+								function subtrair() {
+												var tn1 = document.getElementById('txtn1')
+												var tn2 = document.getElementById('txtn2')
+												var res = document.getElementById('res')
+												var n1 = Number(tn1.value)
+												var n2 = Number(tn2.value)
+												var s = n1 - n2
+												res.innerText = `${n1} – ${n2} = ${s}`
+								}
+								function somar() {
+												var tn3 = document.getElementById('txtn3')
+												var tn4 = document.getElementById('txtn4')
+												var res = document.getElementById('res')
+												var n3 = Number(tn3.value)
+												var n4 = Number(tn4.value)
+												var s = n3 + n4
+												res.innerText = `${n3} + ${n4} = ${s}`
+								}
+								function multiplicar() {
+												var tn5 = document.querySelector('input#txtn5')
+												var tn6 = document.querySelector('input#txtn6')
+												var res = document.querySelector('div#res')
+												var n5 = Number(tn5.value)
+												var n6 = Number(tn6.value)
+												var s = n5 * n6
+												res.innerText = `${n5} × ${n6} = ${s}`
+								}
+								function dividir() {
+												var tn7 = document.querySelector('input#txtn7')
+												var tn8 = document.querySelector('input#txtn8')
+												var res = document.querySelector('div#res')
+												var n7 = Number(tn7.value)
+												var n8 = Number(tn8.value)
+												var s = n7 / n8
+												res.innerText = `${n7} ÷ ${n8} = ${s}`
+								}
+				</script>
+</body>
+</html>

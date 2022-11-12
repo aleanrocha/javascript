@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<title>Curso de JavaScript</title>
+				<style>
+								body {
+												font-family: Arial, Helvetica, sans-serif;
+								}
+								h1 {
+												text-align: center;
+								}
+								div#area {
+												background-color: darkblue;
+												color: white;
+												line-height: 200px;
+												text-align: center;
+												margin: auto;
+												height: 200px;
+												width: 200px;
+								}
+				</style>
+</head>
+<body>
+				<h1>Trabalhando Eventos DOM</h1>
+				<div id="area">
+								Interaja...
+				</div>
+				<script>
+								var a = document.getElementById('area')
+								a.addEventListener('click', clicar)
+								a.addEventListener('mouseenter', entrar)
+								a.addEventListener('mouseout', sair)
+								
+								function clicar() {
+												a.innerText = 'CLICOU'
+												a.style.backgroundColor = 'Black'
+								}
+								function entrar() {
+												a.innerText = 'ENTROU'
+												a.style.backgroundColor = 'green'
+								}
+								function sair() {
+												a.innerText = 'SAIU'
+												a.style.backgroundColor = 'red'
+								}
+				</script>
+</body>
+</html>

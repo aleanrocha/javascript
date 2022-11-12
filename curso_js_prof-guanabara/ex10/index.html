@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<title>Curso de JavaScript</title>
+				<style>
+								body {
+												background-color: lightblue;
+												color: darkblue;
+												font-family: Arial, Helvetica, sans-serif;
+								}
+								input {
+												border-radius: 5px;
+												border: none;
+												padding: 5px;
+								}
+								input.btn {
+												background-color: black;
+												color: white;
+								}
+				</style>
+</head>
+<body>
+				<h1>Calculando Multas</h1>
+				<input type="number" name="txtvel" id="txtvel" placeholder="Digite a velocidade do carro"> km/h
+				<input class="btn" type="button" value="Verificar" onclick="clicar()">
+				<div id="res"></div>
+				<script>
+								alert('Trabalhando com condições (part 1)')
+								function clicar() {
+								//pega o valor do input
+												var txtv = document.querySelector('input#txtvel')
+								//armazena o resultado na div
+								var res = document.querySelector('div#res')
+								//transforma o valor do input de texto pra número
+								var vel = Number(txtv.value)
+								res.innerHTML = `<p>Sua velocidade atual e de <strong>${vel}</strong>km/h.</p>`
+								if (vel > 60) {
+												res.innerHTML += 'Sua velocidade está acima do permitido, <strong>MULTADO!</strong>'
+								}
+								res.innerHTML += `<p>Dirija sempre com cinto de segurança.</p>`
+						}
+				</script>
+</body>
+</html>

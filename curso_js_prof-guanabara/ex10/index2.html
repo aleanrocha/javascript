@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<title>Curso de JavaScript</title>
+				<style>
+								body {
+												background-color: lightblue;
+												color: darkblue;
+												font-family: Arial, Helvetica, sans-serif;
+								}
+								input {
+												border-radius: 5px;
+												border: none;
+												padding: 5px;
+								}
+								input.btn {
+												background-color: black;
+												color: white;
+								}
+				</style>
+</head>
+<body>
+				<h1>Verificando sua Nacionalidade</h1>
+				<input type="text" name="txtn" id="txtn" placeholder="Digite seu país">
+				<input class="btn" type="button" value="Verificar" onclick="clicar()">
+				<div id="res"></div>
+				<script>
+								alert('Trabalhando com condições (part 1)')
+								function clicar() {
+								//pega o valor do input
+												var txtna = document.querySelector('input#txtn')
+								//armazena o resultado na div
+								var res = document.querySelector('div#res')
+								//transforma o valor do input de texto pra número
+								var tx = txtna.value
+								var pais = tx
+								res.innerHTML = `<p>Vivendo em <strong>${pais}</strong>.</p>`
+								if (pais != 'Brasil' && pais != 'brasil') {
+												res.innerHTML += 'Você é  <strong>ESTRANGEIRO!</strong>'
+								} else {
+												res.innerHTML += 'Você é  <strong>BRASILEIRO!</strong>'
+								}
+						}
+			  </script>
+</body>
+</html>
