@@ -1,5 +1,2 @@
 # javascript
 Cursos de JavaScript
-
-
-
