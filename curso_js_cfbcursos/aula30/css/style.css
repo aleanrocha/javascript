@@ -1,0 +1,33 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    text-align: center;
+    padding: 15px;
+    font-size: 1.5rem;
+}
+div.curso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+    padding: 10px;
+    background-color: lightgray;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+}
+div.cs2 {
+    background-color: gray;
+}
+div.curso:hover {
+    border-color: red;
+}
