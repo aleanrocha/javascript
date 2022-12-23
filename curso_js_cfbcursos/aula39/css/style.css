@@ -1,0 +1,14 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100vw;
+    height: 100vh;
+}
+h1 {
+    background-color: lightgray;
+    padding: 20px;
+    text-align: center;
+}
