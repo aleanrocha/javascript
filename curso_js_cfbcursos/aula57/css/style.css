@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    width: 100%;
+    height: 100%;
+    background-color: lightblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+section#form {
+    background-color: white;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 30px;
+    border-radius: 10px;
+}
+input, label {cursor: pointer;}
+form input[type="text"], input[type="number"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+}
+form .inp-rd p {
+    font-weight: bolder;
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+form .rd {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    gap: 10px;
+    margin: 5px;
+}
+button {
+    display: block;
+    background-color: darkblue;
+    color: white;
+    padding: 10px 20px;
+    margin: auto;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btnRemove {
+    background-color: rgb(12, 57, 63);
+    margin-top: 5px;
+}
+#box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    min-height: 40px;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: 10px auto;
+    padding: 5px;
+}
+#box .carro {
+    width: 165px;
+    background-color: lightseagreen;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.747);
+}

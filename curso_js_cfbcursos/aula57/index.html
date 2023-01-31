@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Aula 57 - Exercícios sobre classes | Objetos pt7 / pt8</title>
+</head>
+<body>
+    <main>
+        <section id="form">
+            <form>
+                <div class="inp">
+                    <label for="i-nome">Nome</label>
+                    <input type="text" name="nome" id="i-nome">
+                </div>
+                <div class="inp">
+                    <label for="i-portas">Portas</label>
+                    <input type="number" name="portas" id="i-portas" value="0">
+                </div>
+                <div class="inp">
+                    <label for="i-blindagem">Blindagem</label>
+                    <input type="number" name="Blindagem" id="i-blindagem" value="0" disabled>
+                </div>
+                <div class="inp">
+                    <label for="i-municao">Munição</label>
+                    <input type="number" name="municao" id="i-municao" value="0" disabled>
+                </div>
+                <div class="inp-rd">
+                    <p>Tipo</p>
+                    <div class="rd">
+                        <label for="i-militar">Militar</label>
+                        <input type="radio" name="carro" id="i-militar" value="m">
+                    </div>
+                    <div class="rd">
+                        <label for="i-normal">Normal</label>
+                        <input type="radio" name="carro" id="i-normal" value="n" checked>
+                    </div>
+                </div>
+            </form>
+            <button id="btnAdd">Adicionar</button>
+            <div id="box"></div>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
