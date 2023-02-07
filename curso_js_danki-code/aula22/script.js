@@ -49,3 +49,23 @@ btn[3].addEventListener('click', function() {
         btn[3].innerHTML = 'Ver menos'
     }
 })
+
+// outro jeito otimizado 
+
+/*
+let btn = document.querySelectorAll('.conteudo button')
+let p = document.querySelectorAll('.conteudo p') 
+
+p.forEach((item,indice)=> {
+    document.querySelectorAll('.conteudo button')[indice]
+    .addEventListener('click', ()=> {
+        if (p[indice].classList.contains('hide-content')) {
+            p[indice].classList.remove('hide-content')
+            btn[indice].innerHTML = 'Ver mais'
+        } else {
+            p[indice].classList.add('hide-content')
+            btn[indice].innerHTML = 'Ver menos'
+        }
+    })
+})
+*/
