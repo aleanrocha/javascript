@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+header {
+  background-color: lightgray;
+  padding: 40px;
+}
+h1 {
+  text-align: center;
+}
+main {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+main .container {
+  display: flex;
+  flex-direction: column;
+}
+main button {
+  font-size: 1rem;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 24px;
+  border: none;
+  cursor: pointer;
+}
