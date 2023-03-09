@@ -1,0 +1,35 @@
+[
+  {
+    "nome": "Pedro",
+    "idade": 22,
+    "sexo": "M",
+    "peso": 74,
+    "esta_estudando": true,
+    "detanhes_estudos": {
+      "curso_1": "HTML5",
+      "curso_2": "CSS3",
+      "curso_3": "JAVASCRIPT",
+      "curso_4": "NODEJS"
+    },
+    "profissao": "Programador",
+    "hobbies": ["Filmes", "Ler", "Estudar", "Programar"],
+    "casado": false
+  },
+
+  {
+    "nome": "Joana",
+    "idade": 19,
+    "sexo": "F",
+    "peso": 64,
+    "esta_estudando": true,
+    "detanhes_estudos": {
+      "curso_1": "PHP",
+      "curso_2": "PYTHON",
+      "curso_3": "RUBY",
+      "curso_4": "JAVA"
+    },
+    "profissao": "Programadora",
+    "hobbies": ["Correr", "Cantar", "Estudar", "Ler", "Programar"],
+    "casada": false
+  }
+]
