@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.hide {
+  display: none;
+}
+h1, h2:nth-child(2) {
+  text-align: center;
+  text-transform: uppercase;
+  color: darkblue;
+}
+h2 {
+  color: darkblue;
+}
+.container {
+  width: 100%;
+  max-width: 700px;
+}
+.container p#loading {
+  text-align: center;
+}
+.div-post {
+  background-color: lightblue;
+  padding: 60px;
+  margin: 20px 0;
+}
+a, input[type=submit] {
+  display: inline-block;
+  background-color: darkblue;
+  max-width: 120px;
+  color: white;
+  padding: 10px 36px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover, input[type=submit]:hover {
+  background-color: rgba(39, 39, 199, 0.815);
+}
+
+#post {
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+}
+form {
+  background-color: lightblue;
+  padding: 50px;
+}
+form label {
+  margin: 10px 0;
+  display: block;
+}
+form input {
+  padding: 10px;
+  width: 100%;
+}
+form textarea {
+  width: 100%;
+  min-height: 120px;
+}
