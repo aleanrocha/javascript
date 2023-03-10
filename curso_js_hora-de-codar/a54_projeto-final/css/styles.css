@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgb(49, 86, 94) linear-gradient(200deg, rgba(2,0,36,1) 0%, rgb(57, 124, 110) 100%, rgb(49, 86, 94) 100%) no-repeat;
+  color: #fff;
+  height: 100vh;
+  width: 100vw;
+}
+#tasks-container {
+  width: 90%;
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  padding-top: 40px;
+}
+#task-header {
+  margin-top: 30px;
+}
+#task-header h1 {
+  font-size: 1.7em;
+}
+form {
+  position: relative;
+  margin: 30px 0;
+}
+form input {
+  padding: 14px;
+  width: 100%;
+  font-size: 1em;
+  border: 3px solid rgb(49, 86, 94);
+  outline: none;
+}
+form button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1.5em;
+  border: 3px solid rgb(49, 86, 94);
+}
+#task-list li {
+  text-align: left;
+  background-color:  rgb(57, 124, 110) ;
+  padding: 16px;
+  margin: 16px;
+  list-style: none;
+  transition: .5s;
+  position: relative;
+}
+#task-list li ion-icon {
+  position: absolute;
+  top: 0;
+  height: 40px;
+  width: 30px;
+  padding: 5px;
+  transition: .5s;
+  cursor: pointer;
+}
+#task-list .done-btn {
+  right: 40px;
+}
+#task-list .done-btn:hover {
+  background-color:  rgb(23, 221, 145);
+}
+#task-list .remove-btn {
+  right: 0;
+}
+#task-list .remove-btn:hover {
+  background-color:rgb(228, 14, 14);
+}
+
+#task-list .li-done {
+  background-color: rgb(21, 20, 48);
+  text-decoration: line-through;
+}
+.hide {
+  display: none;
+}
