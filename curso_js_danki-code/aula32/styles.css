@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgray;
+    width: 100vw;
+    height: 100vh;
+}
+header {
+    background-color: gray;
+    padding: 40px;
+    text-align: center;
+} header h1 {
+    margin-bottom: 16px;
+}
+#movies {
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+}
+.title {
+    cursor: pointer;
+}
+.title, .overview {
+    padding: 10px 0;
+}
+.overview {
+    text-align: justify;
+} 
