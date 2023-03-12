@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Curso de Javascript</title>
+</head>
+<body>
+    <header>
+       <h1>App lista de supermercado</h1>
+    </header>
+    <section id="lista-cadastro">
+        <form>
+            <input type="text" name="nome_produto" id="nome_produto" placeholder="Nome do produto">
+            <input type="number" step="0.1" name="preco_produto" id="preco_produto" placeholder="Preço do produto">
+            <input type="submit" name="acao" value="Cadastrar">
+        </form>
+    </section>
+    <section id="lista-produtos">
+        <div class="produto template-produto hide">
+            <h3>RedBull</h3>
+            <div>
+                <span>R$12,00</span>
+                <button class="btn-remove" type="button">x</button>
+            </div>
+        </div>
+    </section>
+    <section id="res">
+        <h3>Total R$<span>0.00</span></h3>
+    </section>
+</body>
+<script src="supermercado.js"></script>
+</html>
