@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Pedra, Papel ou Tesoura</title>
+  <meta name="description" content="Divirta-se com o jogo pedra, papel ou tesoura.">
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <h1>Pedra, Papel ou Tesoura!</h1>
+  </header>
+  <main>
+    <section id="container">
+      <div class="dialog hide">
+        <div id="popup">
+          <div class="images-disputa">
+            <div class="align-img">
+              <h4>Jogador</h4>
+              <img id="jogador" src="./images/rock.png" alt="pedra">
+              <h4 class="nome-jogador">pedra</h4>
+            </div>
+            <span>x</span>
+            <div class="align-img">
+              <h4>Adversário</h4>
+              <img id="adversario" src="./images/rock.png" alt="pedra">
+              <h4 class="nome-adversario">pedra</h4>
+            </div>
+          </div>
+          <h3>title</h3>
+          <button id="btn-remove" type="button">X</button>
+        </div>
+      </div>
+      <div id="player-options">
+        <h3>Jogador</h3>
+        <img src="./images/rock.png" alt="pedra">
+        <img src="./images/paper.png" alt="papel">
+        <img src="./images/scisor.png" alt="tesoura">
+      </div>
+      <div id="enemy-options">
+        <h3>Adversário</h3>
+        <img src="./images/rock.png" alt="pedra">
+        <img src="./images/paper.png" alt="papel">
+        <img src="./images/scisor.png" alt="tesoura">
+      </div>
+    </section>
+  </main>
+  <script src="./js/scripts.js"></script>
+</body>
+</html>
