@@ -1,0 +1,35 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  width: 100%;
+  height: 100%;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+h1 {
+  padding: 20px;
+}
+h2 {
+  padding: 10px 0;
+}
+form {
+  display: block;
+  text-align: left;
+}
+form div {
+  padding: 5px;
+}
+form input {
+  display: inline;
+  margin: 10px;
+  cursor: pointer;
+}
